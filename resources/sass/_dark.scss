@@ -1,0 +1,90 @@
+@import "./mixins";
+
+[vs-theme="dark"] {
+	--vs-background: 24, 40, 56;
+	--vs-text: 220, 221, 225;
+	--vs-gray-1: 40, 42, 54;
+	--vs-gray-2: 20, 20, 23;
+	--vs-gray-3: 15, 16, 19;
+	--vs-gray-4: 10, 11, 14;
+	--vs-shadow-opacity: 0.3;
+	--vs-dark: 16, 32, 40;
+	--vs-background-opacity: 0.6;
+	--vs-primary: 115, 102, 255;
+	$black: #192a56;
+	$dark: #273c75;
+	$white: #f5f6fa;
+	$body-color: #dcdde1;
+	--white: #{-color("text", 1)};
+	// --dark: #{$white};
+	color: -color("text");
+	background: -color("dark");
+	transition: all 200ms ease;
+	.titlePost {
+		label {
+			color: -color("text", 0.5);
+		}
+	}
+	.vs-pagination-content {
+		&.vs-component-dark {
+			.vs-pagination__active {
+				--vs-color: 255, 255, 255;
+				color: -color("gray-3");
+			}
+		}
+	}
+	.vs-button {
+		&.vs-component-dark {
+			&.vs-button--transparent {
+				color: -color("text") !important;
+				&:hover {
+					&:before {
+						background: -color("color", 0.2);
+					}
+				}
+				&.vs-button--active {
+					&:before {
+						background: -color("color", -var("background-opacity"));
+					}
+				}
+			}
+		}
+	}
+	.vs-ripple,
+	.vs-ripple-invert,
+	.vs-ripple-content {
+		--vs-color: var(--vs-dark);
+	}
+	.vs-loading {
+		--vs-background: var(--vs-dark);
+	}
+	.vs-input-parent {
+		/* --vs-dark: 255, 255, 255 !important; */
+		.vs-input {
+			background: -color("dark") !important;
+			color: -color('text');
+			&__icon {
+				color: -color('text');
+				background: -color('dark');
+				box-shadow: -15px 10px 10px -10px -color('dark', .1);
+			}
+		}
+	}
+	.vs-component-dark {
+		--vs-color: var(--vs-dark) !important;
+		.vs-avatar {
+			color: #fff !important;
+		}
+		&.vs-alert {
+			--vs-color: 0, 0, 0 !important;
+			background: -color("color", 1) !important;
+			color: -color("text", 1) !important;
+		}
+	}
+	.modal-content {
+		background-color: -color("background");
+	}
+	.breadcrumb-item.active {
+		color: -color("text", .8);
+	}
+}

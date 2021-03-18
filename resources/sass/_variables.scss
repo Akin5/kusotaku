@@ -1,0 +1,79 @@
+// custom variables
+
+// Color
+
+$body-color: #34495e;
+$body-bg: #ecf0f1;
+$primary: #2962ff;
+$success: #36bea6;
+$warning: #ffbc34;
+$dark: #34495e;
+$grey: #dee2e6;
+$grey-light: #e8e8e8;
+$white: #fff;
+$black: #2c3e50;
+
+// Font family / Typography
+
+$font-size-base: 0.875rem;
+$font-family-sans-serif: "Montserrat Alternates", sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 600 !default;
+$font-weight-bold: 800 !default;
+
+$h1-font-size: 36px !default;
+$h2-font-size: 30px !default;
+$h3-font-size: 20px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+
+$line-height-base: 1.625rem !default;
+
+$headings-font-family: inherit !default;
+$headings-font-weight: 700 !default;
+$headings-line-height: 1.2 !default;
+$headings-margin-bottom: 0px !default;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.45;
+
+// Tables
+$table-cell-padding: 1rem !default;
+
+// Style anchor elements.
+
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Sidebar
+
+$full-sidebar: 260px;
+$mini-sidebar: 60px;
+
+$content-color: #626262;
+
+// Topbar
+
+$topbar-height: 50px;
+$logo-padding: 0 1rem;
+
+// Vuesax column
+
+$vs-column-bottom-margin: 30px;
+$vs-column-padding: 0 15px;
+$border-radius: .25rem;
+$theme-radius: 4px;
+
+$border-color: rgba(0, 0, 0, 0.1);
+
+$enable-responsive-font-sizes: true;
+$enable-negative-margin: true;

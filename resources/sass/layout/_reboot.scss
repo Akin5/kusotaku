@@ -1,0 +1,26 @@
+body {
+	background-color: $body-bg;
+	color: $body-color;
+}
+a {
+	color: rgba(var(--vs-primary), 1);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+hr {
+	border: 0px;
+	height: 1px;
+	background: $grey-light;
+	margin: 15px 0;
+}

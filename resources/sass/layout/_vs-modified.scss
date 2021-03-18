@@ -1,0 +1,10 @@
+@include media-breakpoint-up(sm) {
+	.vs-row > .vs-col {
+		padding: $vs-column-padding;
+	}
+}
+.vs-select-content {
+	width: 100%;
+	position: relative;
+	margin: 1rem 0.5rem;
+}
